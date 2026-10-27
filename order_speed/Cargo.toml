@@ -1,0 +1,3 @@
+[workspace]
+members = ["gap_test", "freq_test"]
+resolver = "2"

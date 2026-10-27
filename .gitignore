@@ -1,0 +1,26 @@
+# Data and secrets: never commit these
+data/
+config.env
+.env
+*.env
+trade_log.csv
+diag_log.csv
+*.pem
+*.key
+
+# Rust builds and the logs the order tests write
+target/
+order_speed/**/*.log
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

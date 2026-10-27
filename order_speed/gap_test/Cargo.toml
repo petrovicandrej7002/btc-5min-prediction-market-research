@@ -1,0 +1,21 @@
+[package]
+name = "gap_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", features = ["json", "rustls-tls", "http2"], default-features = false }
+tokio-tungstenite = { version = "0.21", features = ["rustls-tls-webpki-roots"] }
+futures-util = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+dotenv = "0.15"
+hex = "0.4"
+base64 = "0.22"
+chrono = "0.4"
+hmac = "0.12"
+sha2 = "0.10"
+polymarket-client-sdk = "0.3"
+rust_decimal = "1"
+alloy = { version = "1", features = ["sol-types", "dyn-abi", "signers"] }
